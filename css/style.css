@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.font-inter {
+  font-family: "Inter", sans-serif; }
+
+.font-lexend {
+  font-family: "Lexend Deca", sans-serif; }
+
+.font-size-15 {
+  font-size: 15px; }
+
+.bg-main {
+  background: #090b1a; }
+
+.bg-card {
+  background: #1b1938; }
+
+.accent {
+  color: #aa5cdb; }
+
+.main-head {
+  color: white; }
+
+.main-para {
+  color: rgba(255, 255, 255, 0.75); }
+
+.stat-head {
+  color: rgba(255, 255, 255, 0.6); }
+
+body {
+  padding: 5% 6% 1% 6%;
+  margin: 0; }
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body .container #card3 {
+      display: none; }
+    body .container .card-img {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.7)), to(rgba(170, 92, 219, 0.7))), url("../images/image-header-desktop.jpg");
+      background-image: linear-gradient(rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)), url("../images/image-header-desktop.jpg");
+      background-size: cover; }
+    body .container #card1 {
+      padding: 2rem 3rem 2rem 3rem; }
+      body .container #card1 .main-header {
+        margin-bottom: 2rem; }
+        body .container #card1 .main-header h2 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem; }
+        body .container #card1 .main-header p {
+          margin-bottom: 4rem; }
+      body .container #card1 .statis {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body .container #card1 .statis .bottom-stat {
+          width: 12rem;
+          text-transform: uppercase; }
+    body .container .card {
+      display: inline-block;
+      width: 50vw; }
+
+@media screen and (max-width: 749px) {
+  body {
+    margin: 0;
+    padding: 15% 6% 15% 6%; }
+    body .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      body .container #card3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 400px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.7)), to(rgba(170, 92, 219, 0.7))), url("../images/image-header-mobile.jpg");
+        background-image: linear-gradient(rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)), url("../images/image-header-mobile.jpg");
+        background-size: cover; }
+      body .container #card2 {
+        display: none; }
+      body .container #card1 {
+        padding: 2rem 3rem 2rem 3rem;
+        width: 100%; }
+        body .container #card1 .main-header {
+          margin-bottom: 2rem;
+          text-align: center; }
+          body .container #card1 .main-header h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem; }
+          body .container #card1 .main-header p {
+            margin-bottom: 2rem; }
+        body .container #card1 .statis {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          text-align: center; }
+          body .container #card1 .statis #bottom-stat {
+            margin: 1rem auto;
+            text-transform: uppercase; } }
+
+/*
+@include media-md {
+  .container {
+    display: flex;
+
+    .card-img {
+      background-image: linear-gradient(
+          hsla(277, 64%, 61%, 0.7),
+          hsla(277, 64%, 61%, 0.7)
+        ),
+        url("../images/image-header-desktop.jpg");
+
+      background-size: cover;
+    }
+
+    #card1 {
+      padding: 2rem 3rem 2rem 3rem;
+
+      .main-header {
+        margin-bottom: 2rem;
+
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          margin-bottom: 4rem;
+        }
+      }
+
+      .statis {
+        display: inline-flex;
+        .bottom-stat {
+          margin-right: 3.7rem;
+        }
+      }
+    }
+    .card {
+      display: inline-block;
+      width: 50vw;
+    }
+  }
+}
+*/
