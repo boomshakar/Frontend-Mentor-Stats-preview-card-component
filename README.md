@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/boomshakar/Frontend-Mentor-Stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://boomshakar.github.io/Frontend-Mentor-Stats-preview-card-component/)
 
 ### Built with
 
