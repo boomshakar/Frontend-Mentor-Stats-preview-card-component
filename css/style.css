@@ -33,42 +33,54 @@
   color: rgba(255, 255, 255, 0.6); }
 
 body {
-  padding: 5% 6% 1% 6%;
-  margin: 0; }
+  padding: 12% 10% 12% 10%;
+  margin: 0;
+  height: 100vh;
+  width: 100vw; }
   body .container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 475px; }
     body .container #card3 {
       display: none; }
     body .container .card-img {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.7)), to(rgba(170, 92, 219, 0.7))), url("../images/image-header-desktop.jpg");
-      background-image: linear-gradient(rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)), url("../images/image-header-desktop.jpg");
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 5, 168, 0.5))), url("../images/image-header-desktop.jpg");
+      background-image: linear-gradient(rgba(106, 5, 168, 0.5)), url("../images/image-header-desktop.jpg");
       background-size: cover; }
     body .container #card1 {
-      padding: 2rem 3rem 2rem 3rem; }
-      body .container #card1 .main-header {
-        margin-bottom: 2rem; }
-        body .container #card1 .main-header h2 {
-          font-size: 2rem;
-          margin-bottom: 1.5rem; }
-        body .container #card1 .main-header p {
-          margin-bottom: 4rem; }
+      padding: 6% 10% 0 6%;
+      width: 52%;
+      border-radius: 10px 0 0 10px; }
+      body .container #card1 .main-header h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem; }
+      body .container #card1 .main-header p {
+        margin-bottom: 4.5rem;
+        width: 88%;
+        line-height: 2; }
       body .container #card1 .statis {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
         body .container #card1 .statis .bottom-stat {
-          width: 12rem;
-          text-transform: uppercase; }
-    body .container .card {
-      display: inline-block;
-      width: 50vw; }
+          width: 12rem; }
+          body .container #card1 .statis .bottom-stat h4 {
+            font-size: 1.5rem;
+            margin-bottom: 5%; }
+          body .container #card1 .statis .bottom-stat p {
+            text-transform: uppercase;
+            font-size: 0.8rem; }
+    body .container #card2 {
+      border-radius: 0 10px 10px 0;
+      width: 48%; }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 839px) {
   body {
+    padding: 12% 10% 12% 10%;
     margin: 0;
-    padding: 15% 6% 15% 6%; }
+    height: 100vh;
+    width: 100vw; }
     body .container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -76,15 +88,18 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
       body .container #card3 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 400px;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.7)), to(rgba(170, 92, 219, 0.7))), url("../images/image-header-mobile.jpg");
-        background-image: linear-gradient(rgba(170, 92, 219, 0.7), rgba(170, 92, 219, 0.7)), url("../images/image-header-mobile.jpg");
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 5, 168, 0.5))), url("../images/image-header-mobile.jpg");
+        background-image: linear-gradient(rgba(106, 5, 168, 0.5)), url("../images/image-header-mobile.jpg");
         background-size: cover; }
       body .container #card2 {
         display: none; }
@@ -111,48 +126,3 @@ body {
           body .container #card1 .statis #bottom-stat {
             margin: 1rem auto;
             text-transform: uppercase; } }
-
-/*
-@include media-md {
-  .container {
-    display: flex;
-
-    .card-img {
-      background-image: linear-gradient(
-          hsla(277, 64%, 61%, 0.7),
-          hsla(277, 64%, 61%, 0.7)
-        ),
-        url("../images/image-header-desktop.jpg");
-
-      background-size: cover;
-    }
-
-    #card1 {
-      padding: 2rem 3rem 2rem 3rem;
-
-      .main-header {
-        margin-bottom: 2rem;
-
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
-        }
-        p {
-          margin-bottom: 4rem;
-        }
-      }
-
-      .statis {
-        display: inline-flex;
-        .bottom-stat {
-          margin-right: 3.7rem;
-        }
-      }
-    }
-    .card {
-      display: inline-block;
-      width: 50vw;
-    }
-  }
-}
-*/
